@@ -1,0 +1,82 @@
+* {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(198, 198, 198);
+    font-family: "Red Hat Display", serif;
+
+}
+.navbar {
+    box-shadow: 5px 5px 7px rgba(63, 56, 129, 0.385);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    padding: 20px;
+    background-color: rgb(63, 56, 129)
+}
+.navbar li {
+    display: inline;
+}
+.navbar a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #ffff;
+    background-color: rgb(63, 56, 129);
+}
+.contactheader {
+    
+    margin: 20px;
+    font-size: 2em;
+    color: rgb(68, 71, 73);
+    text-align: center;
+    
+}
+form {
+    display: block;
+    text-align: center;
+    border: 10px solid rgb(63, 56, 129);
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    background-color: rgb(63, 56, 129);
+    padding: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(63, 56, 129, 0.385);
+}
+label {
+    display: block;
+    font-size: 25px;
+    background-color: rgb(63, 56, 129);
+    color: rgb(188, 188, 188);
+    text-decoration: underline;
+}
+.contactbutton {
+    display: block;
+    margin: auto;
+
+    font-size: 24px;
+    padding: 14px 40px;
+    margin-bottom: 100px;
+    border: 10px solid rgb(63, 56, 129);
+    border-radius: 25px;
+    background-color: rgb(63, 56, 129);
+    color: #ffff;
+    box-shadow:5px 5px 5px rgba(63, 56, 129, 0.385);;
+}
+
+footer {
+    margin: 0px;
+    padding: 50px;
+    background-color: rgb(63, 56, 129);
+    color: #ffff;
+    box-shadow: 0px 0px 20px 10px rgb(63, 56, 129);
+}
+p {
+    background-color: rgb(63, 56, 129);
+}
+

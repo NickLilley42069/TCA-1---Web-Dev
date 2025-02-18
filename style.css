@@ -39,4 +39,10 @@ footer {
     background-color: rgb(54, 50, 117);
     color: white;
     grid-area: footer;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-bottom: 55px;
+    text-align: right;
+    padding: 20px;
 }

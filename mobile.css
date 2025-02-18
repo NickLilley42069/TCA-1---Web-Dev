@@ -1,10 +1,33 @@
 body {
     background-color: rgb(54, 50, 117);
 }
-nav {
+.MobileNav {
+    background-color: rgb(54, 50, 117);
     height: 0.8em;
     width: 1.25em;
     display: block;
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
+    display: block;
+}
+nav {
+    display: block;
+    background-color: rgb(211, 100, 59);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    }
+#clicked .on {
+    display: block;
+}
+#clicked .off {
+    display: none;
+}
+#clicked:target .on {
+    display: none;
+}   
+#clicked:target .off {
+    display: block;
 }

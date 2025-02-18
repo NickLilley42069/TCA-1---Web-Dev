@@ -35,6 +35,10 @@ main {
     margin-left: 100px;
     margin-right: 100px;
 }
+header {
+    display: none;
+}
+
 form {
     display: block;
     text-align: center;

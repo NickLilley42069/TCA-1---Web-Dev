@@ -1,5 +1,5 @@
 header {
-    background-color: blue;
+    background-color: rgb(54, 50, 117);
     color: white;
     padding: 20px;
     grid-area: header;
@@ -9,7 +9,7 @@ nav {
     grid-area: nav;
 }
 main {
-    background-color: darkblue;
+    background-color: rgb(54, 50, 117);
     color: white;
     grid-area: main;
 }
@@ -18,7 +18,7 @@ aside {
     grid-area: aside;
 }
 footer {
-    background-color: darkgreen;
+    background-color: rgb(54, 50, 117);
     color: white;
     grid-area: footer;
 }

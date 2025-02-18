@@ -5,8 +5,15 @@ header {
     grid-area: header;
     }
 nav {
-    background-color: rgb(54, 50, 117);
+    background-color: 63, 56, 129;
     grid-area: nav;
+    box-shadow: 5px 5px 7px rgba(63, 56, 129, 0.385);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    padding: 20px;
 }
 main {
     background-color: rgb(54, 50, 117);

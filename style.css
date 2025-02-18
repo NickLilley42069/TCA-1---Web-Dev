@@ -30,6 +30,8 @@ main {
     background-color: rgb(54, 50, 117);
     color: white;
     grid-area: main;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 aside {
     background-color: lightgreen;

@@ -72,6 +72,7 @@ aside {
     background-color: rgb(211, 100, 59);
     grid-area: aside;
     text-align: center;
+    box-shadow: 5px 5px 5px rgb(211, 100, 59;
 }
 footer {
     background-color: rgb(54, 50, 117);

@@ -5,7 +5,7 @@ header {
     grid-area: header;
     }
 nav {
-    background-color: yellow;
+    background-color: rgb(54, 50, 117);
     grid-area: nav;
 }
 main {

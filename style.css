@@ -31,7 +31,7 @@ main {
     color: white;
     grid-area: main;
     margin-top: 50px;
-    margin-bottom: auto;
+    margin-bottom: 275px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -69,8 +69,9 @@ label {
     box-shadow:5px 5px 5px rgba(63, 56, 129, 0.385);;
 }
 aside {
-    background-color: lightgreen;
+    background-color: rgb(211, 100, 59);
     grid-area: aside;
+    text-align: center;
 }
 footer {
     background-color: rgb(54, 50, 117);

@@ -3,22 +3,22 @@ header {
     color: white;
     padding: 20px;
     grid-area: header;
-}
-nav {
+    }
+    nav {
     background-color: yellow;
     grid-area: nav;
-}
-main {
+    }
+    main {
     background-color: darkblue;
     color: white;
     grid-area: main;
-}
-aside {
+    }
+    aside {
     background-color: lightgreen;
     grid-area: aside;
-}
-footer {
+    }
+    footer {
     background-color: darkgreen;
     color: white;
     grid-area: footer;
-}
+    }

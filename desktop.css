@@ -44,13 +44,17 @@ form {
     text-align: center;
     border: 10px solid rgb(63, 56, 129);
     border-radius: 25px;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 25px;
     background-color: rgb(63, 56, 129);
-    padding: 20px;
+    padding: 50px;
     box-shadow: 0px 0px 10px 5px rgba(63, 56, 129, 0.385);
+
+button {
+    color: ;
+}
 }
 label {
     display: block;
@@ -58,19 +62,6 @@ label {
     background-color: rgb(63, 56, 129);
     color: rgb(188, 188, 188);
     text-decoration: underline;
-}
-.submit {
-    display: block;
-    margin: auto;
-
-    font-size: 24px;
-    padding: 14px 40px;
-    margin-bottom: 100px;
-    border: 10px solid rgb(63, 56, 129);
-    border-radius: 25px;
-    background-color: rgb(63, 56, 129);
-    color: #ffff;
-    box-shadow:5px 5px 5px rgba(63, 56, 129, 0.385);;
 }
 aside {
     background-color: rgb(211, 100, 59);

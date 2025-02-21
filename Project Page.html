@@ -6,26 +6,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" ></link>
     <link rel="stylesheet" href="main.css" media="screen">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
 </head>
-<body>
-    <header>
-        <button class="open" popovertarget="showNav"></button>
-    </header>
-    <nav popover role="showNav" id="showNav">
-        <button class="close" popovertarget="showNav" popovertargetaction="hide"></button>
-        <div id="#">
-            <li><a href="Homepage.html">Home</a></li>
-            <li><a href="Project Page.html">Project</a></li>
-            <li><a href="About us Page.html">About</a></li>
-            <li><a href="Contact us Page.html">Contact</a></li>
-            <li><a href="Video Demo Page.html">Video</a></li>
-            <li><a href="Written Report Page.html">Report</a></li>
-        </div>
-        </nav>
+    <body id="toggle">
+        <header>
+            <a href="#toggle" class="showNav"></a>
+            <a href="#toggle" class="on"></a>
+        </header>
+        <nav id="#">
+            <div>
+                <a href="#" class="closeNav">X</a>
+                <a href="#" class="off" style="display: none;"></a>
+            </div>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Project Page.html">Project</a></li>
+                <li><a href="About us Page.html">About</a></li>
+                <li><a href="Contact us Page.html">Contact</a></li>
+                <li><a href="Video Demo Page.html">Video</a></li>
+                <li><a href="Written Report Page.html">Report</a></li>
+            </nav>
     <aside>
         <h1>hello hello</h1>
     </aside>

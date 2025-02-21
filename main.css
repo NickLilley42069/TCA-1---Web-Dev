@@ -1,0 +1,43 @@
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    background-color: rgb(54, 50, 117);
+}
+header {
+    grid-area: header;
+}
+nav {
+    background-color: rgb(54, 50, 117);
+}
+nav li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #ffff;
+}
+main {
+    background-color: rgb(54, 50, 117);
+    color: white;
+    grid-area: main;
+    height: 200vh;
+}
+aside {
+    background-color: rgb(211, 100, 59);
+    grid-area: aside;
+    text-align: center;
+}
+footer {
+    background-color: rgb(54, 50, 117);
+    color: white;
+    grid-area: footer;
+}

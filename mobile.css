@@ -3,30 +3,70 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header"
+    "header header header"
     "nav"
     "main"
     "aside"
     "footer";
 }
 .showNav {
+    margin: 10px;
     height: 0.8em;
     width: 1.25em;
     display: block;
-    border-top: 0.2em solid white;
-    border-bottom: 0.2em solid white;;
+    border-top: 0.2em solid plum;
+    border-bottom: 0.2em solid plum;
 }
 .showNav::before {
+    margin: 5px;
     content: '';
     position: absolute;
     width: 1.25em;
     margin-top: 0.3em;
-    border-top: 0.2em solid #ffff;
+    border-top: 0.2em solid rgb(54, 50, 117);
+}
+nav .closeNav {
+    margin: 10px;
+    padding: 3px;
 }
 .closeNav {
-    height: 1px;
-    width: 1px;
-    display: block;
+    background: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    width: 10px;
+    opacity: 0.3;
+}
+.closeNav:before {
+    content: "";
+    background: white;
+    position: absolute;
+    left: 5px;
+    height: 10px;
+    width: 5px;
+}
+.closeNav:after {
+    content: "";
+    background-color: #ffff;
+    position: absolute;
+    top: -5px;
+    right: 5.7px;
+    height: 10px;
+    width: 5.6px;
+    opacity: 1;
+}
+.closeNav {
+    transform: 
+    rotate(45deg);
+}
+.closeNav:after {
+    transform: 
+    rotate(180deg);
+}
+.closeNav:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 nav {
     display: none;
@@ -53,13 +93,26 @@ nav {
     display: block;
 }
 nav li {
-    display: block;
-    
-}
-nav a {
+    display: block;  
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
-    margin: 30px;
+    margin: 40px;
     color: #ffff;
+}
+header {
+    background-color: rgb(54, 50, 117);
+    margin: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+footer {
+    margin: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+aside {
+    border: 2px;
+    margin: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
 }

@@ -8,7 +8,6 @@ body {
     "main"
     "aside"
     "footer";
-    background-color: rgb(54, 50, 117);
 }
 header {
     grid-area: header;
@@ -26,7 +25,7 @@ nav a {
     color: #ffff;
 }
 main {
-    background-color: rgb(54, 50, 117);
+    background-color: w;
     color: white;
     grid-area: main;
     height: 200vh;

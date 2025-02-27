@@ -5,7 +5,7 @@ body {
     grid-template-areas: 
     "header"
     "nav"
-    "main main main"
+    "main"
     "message"
     "aside"
     "footer";
@@ -56,7 +56,6 @@ nav {
 #college {
     float: right;
     margin: 10px;
-    text-wrap: ;
 }
 #collegelogo {
     float: left;
@@ -120,6 +119,14 @@ label {
     color: white;
     text-decoration: underline none;
 }
+main {
+    color: black;
+    display: grid;
+    margin: 20px;
+    margin-bottom: 10vh;
+    text-align: center;
+    word-wrap: break-word;
+}
 aside a {
     box-shadow: 2px 4px 3px rgb(211, 100, 59);
     color: #ffff;
@@ -133,4 +140,17 @@ footer {
     margin-bottom: -10px;
     text-align: center;
     padding: 20px;
+}
+.skills {
+    float: right;
+    margin-bottom: 3vh;
+    margin-right: 90vh;
+    padding: 20vh;
+    border: 10px solid rgb(211, 100, 59);
+}
+h1 {
+    color: rgb(54, 50, 117);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgb(54, 50, 117);
 }

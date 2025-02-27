@@ -113,9 +113,10 @@ header {
 main {
     color: black;
     display: grid;
-    margin: 20px;
-    margin-bottom: 10vh;
+    margin: 10px;
+    margin-bottom: 5vh;
     text-align: center;
+    word-wrap: break-word;
 }
 main h1 {
     color: rgb(54, 50, 117);
@@ -138,7 +139,6 @@ main h1 {
 #college {
     float: right;
     margin: 10px;
-    text-wrap: ;
 }
 #collegelogo {
     float: left;
@@ -231,4 +231,21 @@ aside a {
     box-shadow: 2px 4px 3px rgb(211, 100, 59);
     padding: 10px;
     color: white;
+}
+.homepage {
+    display: grid;
+    color: black;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+.skills {
+    margin-top: 10px;
+    text-align: start;
+    float: right;
+    margin-bottom: 3vh;
+    margin-right: 350px;
+    padding: 20px;
+    border: 10px solid rgb(211, 100, 59);
+    background-color: rgb(211, 100, 59);
+    border-radius: 40px;
 }

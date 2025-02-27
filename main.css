@@ -28,7 +28,6 @@ main {
     background-color: w;
     color: white;
     grid-area: main;
-    height: 200vh;
 }
 aside {
     background-color: rgb(211, 100, 59);

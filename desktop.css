@@ -190,9 +190,13 @@ h1 {
     opacity: 0.5;
     cursor: pointer;
 }
-.photoshop {
+.photoshoplink {
     margin: auto;
     border: 10px solid rgb(211, 100, 59);
     margin: 10px;
 
+}
+.demolink {
+    text-decoration: none;
+    color: red;
 }

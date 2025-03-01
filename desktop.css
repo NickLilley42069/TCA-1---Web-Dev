@@ -122,8 +122,6 @@ label {
 main {
     color: black;
     display: grid;
-    margin: 20px;
-    margin-bottom: 10vh;
     text-align: center;
     word-wrap: break-word;
 }
@@ -132,6 +130,18 @@ aside a {
     color: #ffff;
     padding: 10px;
     
+}
+.showtell {
+    color: #ffff;
+    text-align: center;
+    margin: 5vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border: 5px solid rgb(54, 50, 117);
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(63, 56, 129, 0.385);
+    padding: 3vh;
+    background-color: rgb(54, 50, 117);
 }
 footer {
     margin-top: 10px;
@@ -142,15 +152,47 @@ footer {
     padding: 20px;
 }
 .skills {
-    float: right;
+    justify-content: left;
     margin-bottom: 3vh;
     margin-right: 90vh;
     padding: 20vh;
     border: 10px solid rgb(211, 100, 59);
+    border-radius: 35px;
+    background-color: rgb(211, 100, 59);
 }
 h1 {
-    color: rgb(54, 50, 117);
+    color: #363275;
     text-align: center;
     text-decoration: underline;
     text-shadow: 2px 2px 3px rgb(54, 50, 117);
+}
+.pythonlink {
+    justify-content: center;
+    padding: 20vh;
+    border: 10px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
+    width: 400px;
+    height: 400px;
+    display: grid;   
+}
+.converter {
+    border: 10px solid rgb(54, 50, 117);
+}
+.converter:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.calculator {
+    margin-bottom: 10px;
+    border: 10px solid rgb(54, 50, 117);
+}
+.calculator:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.photoshop {
+    margin: auto;
+    border: 10px solid rgb(211, 100, 59);
+    margin: 10px;
+
 }

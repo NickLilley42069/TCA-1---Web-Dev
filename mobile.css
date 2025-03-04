@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header"
@@ -17,15 +17,15 @@ header {
     margin-left: -10px;
     margin-right: -10px;
 }
-.homepagewelcometext {
+.welcometext {
     z-index: 1;
-    color: black;
+    color: rgb(54, 50, 117);
     display: grid;
     position: relative;
     text-align: center;
     text-wrap: balance;
 }
-h1 {
+.welcomemessage {
     display: grid;
     padding: 0px;
     margin: 5px;
@@ -34,7 +34,20 @@ h1 {
     text-align: center;
     text-decoration: underline;
     text-shadow: 2px 2px 3px rgb(54, 50, 117);
-    text-wrap: balance;
+}
+main h1 {
+    display: grid;
+    padding: 0px;
+    margin: 5px;
+    margin-left: -10px;
+    color: rgb(54, 50, 117);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgb(54, 50, 117);
+}
+.demolink {
+    text-decoration: none;
+    color: purple;
 }
 /*This is the about page content */
 .showtell {
@@ -95,12 +108,6 @@ footer {
     margin-left: -10px;
     margin-right: -10px;
 }
-footer div {
-    text-align: center;
-    padding: 4vh;
-    font-size: 35px;
-    text-overflow: ellipsis;
-}
 /*This is for the contact page. */
 #name {
     width: 21.4em;
@@ -156,11 +163,20 @@ aside a {
     border: 10px solid rgb(211, 100, 59);
     background-color: rgb(211, 100, 59);
     border-radius: 40px;
+    color: white;
+}
+.skills li {
+    list-style-type: none;
+}
+.skills a {
+    color: white;
+    text-decoration: none;
 }
 /*this is the part of the home page where you can click on the python to take you to the part on the project page of where it is */
 .pythonlink {
-    width: 350px;
-    height: 350px;
+    margin: auto;
+    border: 5px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
     display: grid;   
 }
 .converter {
@@ -180,7 +196,12 @@ aside a {
     opacity: 0.5;
     cursor: pointer;
 }
-
+.websiteplaceholder {
+    margin: auto;
+    border: 5px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
+    display: grid;
+}
  /*This is the Navigation part on my page */
 .showNav {
     margin: 10px;
@@ -286,19 +307,3 @@ p {
     margin-top: 50px;
 }
 /*This is for the Project Page */
-.StarboyFTMClothing {
-    display: grid;
-    justify-content: center;
-    width: 100px;
-    height: 75px;
-}
-.photoshopcontent {
-    display: grid;
-    justify-content: center;
-    width: 100px;
-    height: 75px;
-}
-.demolink {
-    text-decoration: none;
-    color: red;
-}

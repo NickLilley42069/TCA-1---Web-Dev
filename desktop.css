@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "header"
@@ -125,11 +125,13 @@ main {
     text-align: center;
     word-wrap: break-word;
 }
-aside a {
+aside {
+    margin: 15px;
+}
+aside + a {
     box-shadow: 2px 4px 3px rgb(211, 100, 59);
     color: #ffff;
-    padding: 10px;
-    
+    padding: 10px;  
 }
 .showtell {
     color: #ffff;
@@ -153,26 +155,30 @@ footer {
 }
 .skills {
     justify-content: left;
-    margin-bottom: 3vh;
-    margin-right: 90vh;
     padding: 20vh;
     border: 10px solid rgb(211, 100, 59);
     border-radius: 35px;
     background-color: rgb(211, 100, 59);
 }
-h1 {
-    color: #363275;
-    text-align: center;
+.skills > ul {
+    list-style-type: none;
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.welcomemessage {
     text-decoration: underline;
+    color: rgb(54, 50, 117);
+    text-align: center;
     text-shadow: 2px 2px 3px rgb(54, 50, 117);
 }
 .pythonlink {
     justify-content: center;
-    padding: 20vh;
+    padding: 10vh;
     border: 10px solid rgb(54, 50, 117);
     background-color: rgb(211, 100, 59);
-    width: 400px;
-    height: 400px;
     display: grid;   
 }
 .converter {
@@ -198,5 +204,5 @@ h1 {
 }
 .demolink {
     text-decoration: none;
-    color: red;
+    color: purple;
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nick.Lilley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">   
+</head>
+<body id="toggle">
+    <header>
+        <div>
+            <a href="#toggle" class="showNav"></a>
+            <a href="#toggle" class="on"></a>
+        </div>
+
+    </header>
+    <nav id="#">
+            <a href="#" class="closeNav"></a>
+            <a href="#" class="off" style="display: none;"></a>
+        <div>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Project Page.html">Project</a></li>
+                <ul>
+                    <li><a href="Binary & Decimal Converter">Binary & Decimal Converter</a></li>
+                </ul>
+            <li><a href="About us Page.html">About</a></li>
+            <li><a href="Contact us Page.html">Contact</a></li>
+            <li><a href="Video Demo Page.html">Video</a></li>
+            <li><a href="Written Report Page.html">Report</a></li>
+        </div>
+    </nav>

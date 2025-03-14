@@ -1,0 +1,171 @@
+/*this is the main mobile css file, majority of the content here is stuff that doesnt work for the desktop or just has parts that work best here and for the sake of consistency, is needed here instead of across both files.*/
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+main {
+    margin: auto;
+    margin-bottom: 100px;
+}
+header {
+    margin: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+aside {
+    display: grid;
+    border: 2px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: -200px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/*This is for the contact page. this only features the name, email and message aspect as it needed some size modifications for the mobile page*/
+form {
+    display: grid;
+    border: 10px solid rgb(54, 50, 117);
+    background-color: rgb(54, 50, 117);
+    border-radius: 25px;
+    margin: 10px;
+}
+label {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(54, 50, 117);
+    color: white;
+    text-decoration-line: none;
+}
+#name {
+    width: 23em;
+    height: 2em; 
+}
+#email {
+    width: 23em;
+    height: 2em;
+}
+#message {
+    width: 23em;
+    height: 5em;
+}
+/*video demonstration */
+#kmsembed-0_fr3cf630 {
+    border: 5px solid rgb(54, 50, 117);
+    background-color: rgb(63, 56, 129);
+    height: 30vh;
+    width: 50vh;
+}
+ /*This is the Navigation part on my page, this is only present here as it is how the hamburger icon menu works and it isnt what i want to have present on the desktop version*/
+.showNav {
+    margin: 10px;
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    opacity: 0.5;
+}
+.showNav:before {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid white;
+}
+/*this is the about us page configuration */
+.showtell {
+    margin: 50px;
+}
+/*the hover is my animation effects for the mobile page, when hovered over the hamburger icon or the 'x' for close, it changes opacity */
+.showNav:hover {
+    opacity: 1;
+}
+nav .closeNav {
+    margin: 10px;
+    padding: 3px;
+}
+.closeNav {
+    background: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    width: 10px;
+    opacity: 0.3;
+}
+.closeNav:before {
+    content: "";
+    background: white;
+    position: absolute;
+    left: 5px;
+    height: 10px;
+    width: 5px;
+}
+.closeNav:after {
+    content: "";
+    background-color: #ffff;
+    position: absolute;
+    top: -5px;
+    right: 5.7px;
+    height: 10px;
+    width: 5.6px;
+    opacity: 1;
+}
+.closeNav {
+    transform: 
+    rotate(45deg);
+}
+.closeNav:after {
+    transform: 
+    rotate(180deg);
+}
+.closeNav:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+/*this is how i made the hamburger icon menu work for the mobile optimization menu, it opens and closes simply when you click the icon. */
+nav {
+    z-index: 5;
+    display: none;
+    background-color: rgb(211, 100, 59);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+}
+#toggle .on {
+    display: block;
+}
+#toggle .off {
+    display: none;
+}
+#toggle:target .on {
+    display: none;
+}
+#toggle:target .off {
+    display: block;
+}
+#toggle:target nav {
+    display: block;
+}
+nav li {
+    display: block;  
+    text-decoration: none;
+    display: inline-block;
+    margin: 23%;
+    color: #ffff;
+}

@@ -1,0 +1,298 @@
+/*This is the CSS file i created that will go over the main aspects across both the desktop and mobile page, to keep content as consistent as possible, thats why this
+is important */
+/*This is the body content, here i also have the font aspects along with how the grid works across each page and how it all looks */
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+}
+/*the header has nothing special and doesnt have much going for it and probably wont, it is just where the navigation in 
+some way is held across all pages and optimazation types, this is where i specify color aspects as to keep it all consistent */
+header {
+    background-color: rgb(54, 50, 117);
+    color: white;
+    grid-area: header;
+}
+/*the nav is the same as most of the content on here, this is just where I have color aspects and some small grid alterations */
+nav {
+    display: block;
+    box-shadow: 5px 5px 7px rgba(63, 56, 129, 0.385);
+    background-color: rgb(54, 50, 117);
+    height:100%;
+    max-height: fit-content;
+}
+/*this is where I have the position alterations are for the navigation banner, it works for both sites so its better to keep it here */
+nav li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color: #ffff;
+}
+/*this is how the main aspect of the page looks, it ties directly to the grid layout, there are aspects of
+the main page that works primarily on the Mobile page and cant be used again for the desktop or else it looks inconsistent and vice versa */
+main {
+    background-color: white;
+    color: white;
+    grid-area: main;
+}
+/*On the homepage, this is the link for the video demonstration, just to give another way that the video demo page can be accessed*/
+.demolink {
+    text-decoration: none;
+    color: purple;
+}
+main h1 {
+    display: grid;
+    padding: 0px;
+    margin: 5px;
+    margin-left: -10px;
+    color: rgb(54, 50, 117);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgb(54, 50, 117);
+}
+.homepagewelcometext {
+    color: black;
+    padding: 30px;
+    margin: 22px;
+    }
+.skills {
+    margin-top: 10px;
+    text-align: start;
+    margin-bottom: 3vh;
+    padding: 20px;
+    border: 10px solid rgb(211, 100, 59);
+    background-color: rgb(211, 100, 59);
+    border-radius: 40px;
+    color: white;
+}
+.skills li {
+    list-style-type: none;
+}
+.skills a {
+    color: white;
+    text-decoration: none;
+}
+.workinprogress {
+    display: grid;
+    padding: 30vh;
+    border: 10px solid rgb(54, 50, 117);
+    background-color: rgb(54, 50, 117);
+    border-radius: 25px;
+}
+/*this welcome message is present across all of the pages and on each variation, just to keep it consistent, reflection on this in the report */
+.welcomemessage {
+    display: grid;
+    padding: 0px;
+    margin: 5px;
+    margin-left: -10px;
+    color: rgb(54, 50, 117);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px rgb(54, 50, 117);
+}
+/*this section is all of the main property aspects of the contact page, from the form to the individual labels and input boxes, sizes and certain conditions may vary */
+.message {
+    color: white;
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
+    text-align: center;
+    box-shadow: 2px 4px 3px rgb(54, 50, 117);
+}
+#submit {
+    width: 115px; 
+    height: 2em;
+    padding: 5px;
+    background-color: rgb(54, 50, 117);
+    border: 4px solid rgb(221, 100, 59);
+    color: white;
+}
+#submit:hover {
+    background-color: rgb(211, 100, 59);
+    cursor: pointer;
+}
+/*This is the content that I have got for the About page, this is responsible for all the images and text values and how it all works. */
+.aboutus {
+    margin: 20px;
+    text-overflow: ellipsis;
+    display: grid;
+    color: black;
+    word-wrap: break-word;
+}
+#collegelogo {
+    float: inline-start;
+    width: 30vh;
+    height: 20vh;
+    padding: 10px;
+}
+#collegegrouppic {
+    width: 50vh;
+    height: 30vh;
+    padding: 30px;
+}
+#NliveLogo {
+    width: 42vh;
+    height: 30vh;
+    padding: 20px;
+}
+/*this is all for the content on my project page*/
+.projectcaption {
+    color: black;
+    text-align: center;
+}
+.htmlplaceholder {
+    border: 5px solid rgb(211, 100, 59);
+    margin: 5px;
+}
+.htmlplaceholder:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.photoshopplaceholder {
+    border: 5px solid rgb(211, 100, 59);
+    margin: 5px;
+}
+.photoshopplaceholder:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.photographyplaceholder {
+    border: 5px solid rgb(54, 50, 117);
+    margin: 5px;
+}
+.photographyplaceholder:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*this is for the python portion */
+.pythonlink {
+    justify-content: center;
+    padding: 10vh;
+    border: 10px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
+    display: grid;   
+}
+.converter {
+    border: 5px solid rgb(54, 50, 117);
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.converter:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.calculator {
+    border: 5px solid rgb(54, 50, 117);
+    margin: 10px;
+}
+.calculator:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*this is for the placeholder photoshop content */
+.photoshoplink {
+    justify-content: center;
+    padding: 10vh;
+    margin: auto;
+    border: 10px solid rgb(211, 100, 59);
+    background-color: rgb(54, 50, 117);
+    display: grid;
+}
+/*this is for the placeholder html content */
+.htmllink {
+    justify-content: center;
+    padding: 10vh;
+    margin: auto;
+    border: 10px solid rgb(211, 100, 59);
+    background-color: rgb(54, 50, 117);
+    display: grid;
+}
+/*this is for the placeholder photography content */
+.photographylink {
+    justify-content: center;
+    padding: 10vh;
+    margin: auto;
+    border: 10px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
+    display: grid; 
+}
+.message {
+    color: white;
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid rgb(54, 50, 117);
+    background-color: rgb(211, 100, 59);
+    text-align: center;
+    box-shadow: 2px 4px 3px rgb(54, 50, 117);
+}
+/*this is the aside content, i was able to reconfigure it so that it would work through out both, to minimise and also keep everything as consise as possible*/
+aside {
+    background-color: rgb(211, 100, 59);
+    grid-area: aside;
+    text-align: center;
+    color: white;
+    margin: 15px;
+}
+aside a {
+    box-shadow: 2px 4px 3px rgb(211, 100, 59);
+    padding: 10px;
+    color: white;
+}
+/*This is for the written Report for the overall project. */
+.report {
+    color: black;
+    margin: 10px;
+    border: 4px solid rgb(54, 50, 117);
+}
+table {
+    border: 2px solid black;
+    padding: 5px;
+}
+th {
+    border: 1px solid black;
+}
+td {
+    border: 1px solid black;
+}
+.planforwebsitelist {
+    border: 2px dotted rgb(211, 100, 59);
+}
+.weektoweek {
+    margin: 10px;
+    border: 4px solid rgb(54, 50, 117);
+}
+.feedbackoverall {
+    margin: 10px;
+    border: 4px solid rgb(54, 50, 117);
+}
+.harvardreferencing {
+    border: 4px solid rgb(221, 100, 59);
+}
+/*this is the video Demonstration page content*/
+/*this is the footer part, same with the aside content, i was able to reconfigure this as well. */
+footer {
+    background-color: rgb(54, 50, 117);
+    grid-area: footer;
+    text-align: center;
+    margin: -5vh;
+    padding: 20px;
+}
+footer h1 {
+    color: white;
+    text-decoration-line: none;
+}

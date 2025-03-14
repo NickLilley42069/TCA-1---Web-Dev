@@ -2,21 +2,59 @@
 <html lang="en">
 <head>
     <title>Nick.Lilley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" ></link>   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">   
 </head>
-<ul class="navbar">
-    <li><a href="Homepage.html">Home</a></li>
-    <li><a href="ProjectPage.html">Project</a></li>
-    <li><a href="AboutPage.html">About</a></li>
-    <li><a href="ContactPage.html">Contact</a></li>
-    <li><a href="VideoDemoPage.html">Video</a></li>
-    <li><a href="ReportPage.html">Report</a></li>
-</ul>
-<body>
-    <h1>Hello, My name is Nick Berkshire-Lilley</h1>
-    
+<body id="toggle">
+    <header>
+        <div>
+            <a href="#toggle" class="showNav"></a>
+            <a href="#toggle" class="on"></a>
+        </div>
+
+    </header>
+    <nav id="#">
+            <a href="#" class="closeNav"></a>
+            <a href="#" class="off" style="display: none;"></a>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="ProjectPage.html">Project</a></li>
+            <li><a href="AboutusPage.html">About</a></li>
+            <li><a href="ContactusPage.html">Contact</a></li>
+            <li><a href="VideoDemoPage.html">Video</a></li>
+            <li><a href="WrittenReportPage.html">Report</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h1><a class="demolink" href="videodemopage.html">This is how i put this site together! [Video Demonstration]</a></h1>
+    </aside>
+    <main>
+        <div class="welcomemessage">
+            <h1>Hello, My name is Nick Berkshire-Lilley</h1>
+        </div>
+            <div class="homepagewelcometext">this is my little way to show you my skills and talents in a diverse range of fields. I am currently in my <b>first year of Software Engineering at the University of Northampton </b> this is my home town and where I currently reside, but my prior experience in other educational locations as well as work experience are mostly located in Northampton too.
+                <div><b>Some of my skills include;</b></div>
+            </div>
+                <div class="skills">
+                    <ul>
+                        <li><a href="ProjectPage.html">Python</a></li>
+                        <li><a href="ProjectPage.html">HTML / CSS</a></li>
+                        <li><a href="ProjectPage.html">Photoshop</a></li>
+                        <li><a href="ProjectPage.html">Photography</a></li>
+                        <li>Along with Many More</li>
+                    </ul>
+                </div>
+            <div class="workinprogress">
+                There will be much more content to come shortly, I appreciate your patience.
+            </div>
+    </main>
+    <footer>
+        <h1>Thank you for visiting my page</h1>
+    </footer>
 </body>
 </html>

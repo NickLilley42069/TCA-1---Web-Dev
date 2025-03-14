@@ -70,7 +70,6 @@ main h1 {
 .skills {
     margin-top: 10px;
     text-align: start;
-    float: center;
     margin-bottom: 3vh;
     padding: 20px;
     border: 10px solid rgb(211, 100, 59);
@@ -295,5 +294,5 @@ footer {
 }
 footer h1 {
     color: white;
-    text-decoration: underline none;
+    text-decoration-line: none;
 }

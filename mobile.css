@@ -1,5 +1,4 @@
-/*this is the main mobile css file, majority of the content here is stuff that doesnt work for the desktop or just has parts that
-work best here and for the sake of consistency, is needed here instead of across both files.*/
+/*this is the main mobile css file, majority of the content here is stuff that doesnt work for the desktop or just has parts that work best here and for the sake of consistency, is needed here instead of across both files.*/
 body {
     display: grid;
     grid-template-columns: auto;
@@ -44,13 +43,12 @@ form {
     margin: 10px;
 }
 label {
-    size: 10px;
     display: block;
     text-align: center;
     font-size: 25px;
     background-color: rgb(54, 50, 117);
     color: white;
-    text-decoration: underline none;
+    text-decoration-line: none;
 }
 #name {
     width: 23em;

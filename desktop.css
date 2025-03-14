@@ -4,29 +4,42 @@ body {
     grid-template-rows: auto;
     grid-template-areas: 
     "header"
-    "nav"
-    "main"
-    "message"
-    "aside"
-    "footer";
+    "nav nav nav"
+    "main main main"
+    "aside aside aside"
+    "footer footer footer";
     background-color: #ffff;
 }
 header {
-    background-color: rgb(54, 50, 117);
-    color: white;
     grid-area: header;
     margin: -10px;
-    }
+}
+main {
+    margin: 50px;
+    color: black;
+    display: grid;
+    text-align: center;
+    word-wrap: break-word;
+}
+/*This is the navigation for the desktop version, my reason for this has been noted in the report. */
 nav {
-    display: block;
-    box-shadow: 5px 5px 7px rgba(63, 56, 129, 0.385);
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -8px;
-    margin-bottom: 55px;
     text-align: right;
     padding: 20px;
 }
+/*this is the video demonstration for the website*/
+#kmsembed-0_fr3cf630 {
+    display: grid;
+    position: relative;
+    padding: 10px;
+    border: 5px solid rgb(54, 50, 117);
+    background-color: rgb(63, 56, 129);
+    display: block;
+    margin: 100px;
+}
+/*this is how i have removed the hamburger menu icon and the functionality behind it */
 #toggle .on {
     display: none;
 }
@@ -39,53 +52,24 @@ nav {
 .closeNav {
     display: none;
 }
-.aboutuspage {
-    display: grid;
-    color: black;
-    text-align: center;
-    margin-bottom: 5vh;
-}
-.showtell {
-    margin: 5vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    border: 5px solid rgb(54, 50, 117);
-    padding: 20vh;
-    background-color: rgb(54, 50, 117);
-}
-#college {
-    float: right;
-    margin: 10px;
-}
-#collegelogo {
-    float: left;
-    width: 30vh;
-    height: 20vh;
-    padding: 10px;
-}
-#collegegrouppic {
-    float: left;
-    width: 50vh;
-    height: 30vh;
-    padding: 20px;
-}
-#NliveLogo {
-    width: 42vh;
-    height: 30vh;
-    padding: 10px;
-}
+/*this is the size configuration for the desktop variation, it doesnt look right with the mobile configurations and vice versa so i had to reevaluate it.*/
 form {
+    display: grid;
+    margin-left: 10;
+    margin-right: -10px;
+    padding: 8px;
+    border: 10px solid rgb(54, 50, 117);
+    background-color: rgb(54, 50, 117);
+    border-radius: 25px;
+    display: inline-block;
+}
+label {
     display: block;
     text-align: center;
-    border: 10px solid rgb(63, 56, 129);
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 25px;
+    font-size: 25px;
     background-color: rgb(63, 56, 129);
-    padding: 50px;
-    box-shadow: 0px 0px 10px 5px rgba(63, 56, 129, 0.385);
+    color: white;
+    text-decoration: underline none;
 }
 #name  {
     width: 40em; 
@@ -99,110 +83,6 @@ form {
     width: 40em; 
     height: 20em;
 }
-#submit {
-    width: 115px; 
-    height: 50px;
-}
-.message {
-    color: white;
-    padding: 10px;
-    margin: 10px;
-    border: 5px solid rgb(54, 50, 117);
-    background-color: rgb(211, 100, 59);
-    text-align: center;
-    box-shadow: 2px 4px 3px rgb(54, 50, 117);
-}
-label {
-    display: block;
-    font-size: 25px;
-    background-color: rgb(63, 56, 129);
-    color: white;
-    text-decoration: underline none;
-}
-main {
-    color: black;
-    display: grid;
-    text-align: center;
-    word-wrap: break-word;
-}
-aside {
-    margin: 15px;
-}
-aside + a {
-    box-shadow: 2px 4px 3px rgb(211, 100, 59);
-    color: #ffff;
-    padding: 10px;  
-}
 .showtell {
-    color: #ffff;
-    text-align: center;
-    margin: 5vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
-    border: 5px solid rgb(54, 50, 117);
-    border-radius: 5px;
-    box-shadow: 5px 5px 7px rgba(63, 56, 129, 0.385);
-    padding: 3vh;
-    background-color: rgb(54, 50, 117);
-}
-footer {
-    margin-top: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: -10px;
-    text-align: center;
-    padding: 20px;
-}
-.skills {
-    justify-content: left;
-    padding: 20vh;
-    border: 10px solid rgb(211, 100, 59);
-    border-radius: 35px;
-    background-color: rgb(211, 100, 59);
-}
-.skills > ul {
-    list-style-type: none;
-    color: white;
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-.welcomemessage {
-    text-decoration: underline;
-    color: rgb(54, 50, 117);
-    text-align: center;
-    text-shadow: 2px 2px 3px rgb(54, 50, 117);
-}
-.pythonlink {
-    justify-content: center;
-    padding: 10vh;
-    border: 10px solid rgb(54, 50, 117);
-    background-color: rgb(211, 100, 59);
-    display: grid;   
-}
-.converter {
-    border: 10px solid rgb(54, 50, 117);
-}
-.converter:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-.calculator {
-    margin-bottom: 10px;
-    border: 10px solid rgb(54, 50, 117);
-}
-.calculator:hover {
-    opacity: 0.5;
-    cursor: pointer;
-}
-.photoshoplink {
-    margin: auto;
-    border: 10px solid rgb(211, 100, 59);
-    margin: 10px;
-
-}
-.demolink {
-    text-decoration: none;
-    color: purple;
+    margin: 50px;
 }
